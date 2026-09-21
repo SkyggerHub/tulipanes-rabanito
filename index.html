@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Para Rabanito 🌷💛</title>
+
+<style>
+
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
+  background:
+
+    radial-gradient(
+      circle at 50% -10%,
+      #fff9d7 0%,
+      #ffe98a 30%,
+      #ffd447 65%,
+      #f6b900 100%
+    );
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 35px 15px;
+
+  position: relative;
+
+  color: #513b00;
+
+}
+
+
+/* =====================================================
+   DESTELLOS DEL FONDO
+===================================================== */
+
+.glow {
+
+  position: fixed;
+
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.22);
+
+  filter: blur(70px);
+
+  pointer-events: none;
+
+  z-index: 0;
+
+}
+
+.glow.one {
+
+  top: -120px;
+  left: -100px;
+
+}
+
+.glow.two {
+
+  right: -130px;
+  bottom: -100px;
+
+}
+
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.header {
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 10;
+
+  margin-bottom: 10px;
+
+  animation:
+    fadeDown 1.2s ease forwards;
+
+}
+
+.header .small {
+
+  font-size: .95rem;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #9a7100;
+
+  font-weight: 700;
+
+}
+
+.header h1 {
+
+  margin-top: 8px;
+
+  font-size:
+    clamp(
+      2rem,
+      7vw,
+      3.5rem
+    );
+
+  line-height: 1.05;
+
+  color: #6a4d00;
+
+  text-shadow:
+    0 3px 12px rgba(255,255,255,.45);
+
+}
+
+.header h1 span {
+
+  color: #bf8500;
+
+}
+
+.nickname {
+
+  margin-top: 8px;
+
+  font-size:
+    clamp(
+      1rem,
+      4vw,
+      1.25rem
+    );
+
+  color: #8c6500;
+
+}
+
+@keyframes fadeDown {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(-20px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* =====================================================
+   RAMO
+===================================================== */
+
+.bouquet {
+
+  position: relative;
+
+  width: min(
+    420px,
+    95vw
+  );
+
+  height: 310px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-end;
+
+  margin-top: 5px;
+
+  z-index: 5;
+
+}
+
+
+/* =====================================================
+   TULIPÁN
+===================================================== */
+
+.tulip {
+
+  position: absolute;
+
+  bottom: 0;
+
+  width: 75px;
+
+  height: 285px;
+
+  transform-origin:
+    bottom center;
+
+  animation:
+    sway
+    4s
+    ease-in-out
+    infinite;
+
+}
+
+
+/* Posiciones individuales */
+
+.tulip:nth-child(1) {
+
+  left: 7%;
+
+  height: 235px;
+
+  transform:
+    rotate(-15deg)
+    scale(.85);
+
+  animation-delay: 0s;
+
+}
+
+.tulip:nth-child(2) {
+
+  left: 22%;
+
+  height: 265px;
+
+  transform:
+    rotate(-8deg)
+    scale(.95);
+
+  animation-delay: .4s;
+
+}
+
+.tulip:nth-child(3) {
+
+  left: 41%;
+
+  height: 300px;
+
+  transform:
+    rotate(-2deg)
+    scale(1.08);
+
+  z-index: 3;
+
+  animation-delay: .8s;
+
+}
+
+.tulip:nth-child(4) {
+
+  right: 22%;
+
+  height: 270px;
+
+  transform:
+    rotate(8deg)
+    scale(.97);
+
+  animation-delay: 1.2s;
+
+}
+
+.tulip:nth-child(5) {
+
+  right: 7%;
+
+  height: 235px;
+
+  transform:
+    rotate(15deg)
+    scale(.86);
+
+  animation-delay: 1.6s;
+
+}
+
+
+/* Movimiento */
+
+@keyframes sway {
+
+  0%,
+  100% {
+
+    rotate: -2deg;
+
+  }
+
+  50% {
+
+    rotate: 3deg;
+
+  }
+
+}
+
+
+/* =====================================================
+   TALLO
+===================================================== */
+
+.stem {
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 50%;
+
+  width: 7px;
+
+  height: 205px;
+
+  transform:
+    translateX(-50%);
+
+  border-radius: 20px;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      #276a32,
+      #54aa52,
+      #276a32
+    );
+
+  box-shadow:
+    0 2px 5px rgba(0,0,0,.15);
+
+}
+
+
+/* =====================================================
+   HOJAS
+===================================================== */
+
+.leaf {
+
+  position: absolute;
+
+  background:
+
+    linear-gradient(
+      135deg,
+      #75bd5a,
+      #2f873f
+    );
+
+  width: 50px;
+  height: 100px;
+
+  bottom: 42px;
+
+  border-radius:
+    100% 0
+    100% 0;
+
+  z-index: 0;
+
+}
+
+.leaf.left {
+
+  left: 50%;
+
+  transform:
+
+    translateX(-95%)
+
+    rotate(-23deg);
+
+}
+
+.leaf.right {
+
+  left: 50%;
+
+  bottom: 70px;
+
+  transform:
+
+    translateX(-5%)
+
+    rotate(25deg)
+
+    scaleX(-1);
+
+}
+
+
+/* =====================================================
+   FLOR DEL TULIPÁN
+===================================================== */
+
+.flower-head {
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 10px;
+
+  width: 72px;
+  height: 78px;
+
+  transform:
+    translateX(-50%);
+
+  filter:
+    drop-shadow(
+      0 8px 6px
+      rgba(119,76,0,.18)
+    );
+
+}
+
+
+/*
+   Base principal del tulipán
+*/
+
+.tulip-base {
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform:
+    translateX(-50%);
+
+  width: 66px;
+  height: 65px;
+
+  border-radius:
+    15% 15%
+    48% 48%;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      #ffe84f,
+      #ffc400
+      60%,
+      #e8a800
+    );
+
+}
+
+
+/*
+   Pétalo izquierdo
+*/
+
+.petal-left {
+
+  position: absolute;
+
+  width: 39px;
+  height: 66px;
+
+  left: 4px;
+  bottom: 15px;
+
+  background:
+
+    linear-gradient(
+      150deg,
+      #fff16c,
+      #ffd11a
+    );
+
+  border-radius:
+
+    80% 25%
+    55% 45%;
+
+  transform:
+    rotate(-15deg);
+
+  transform-origin:
+    bottom;
+
+}
+
+
+/*
+   Pétalo derecho
+*/
+
+.petal-right {
+
+  position: absolute;
+
+  width: 39px;
+  height: 66px;
+
+  right: 4px;
+  bottom: 15px;
+
+  background:
+
+    linear-gradient(
+      210deg,
+      #fff16c,
+      #ffd11a
+    );
+
+  border-radius:
+
+    25% 80%
+    45% 55%;
+
+  transform:
+    rotate(15deg);
+
+  transform-origin:
+    bottom;
+
+}
+
+
+/*
+   Pétalo central
+*/
+
+.petal-center {
+
+  position: absolute;
+
+  width: 40px;
+  height: 75px;
+
+  left: 50%;
+  bottom: 15px;
+
+  transform:
+    translateX(-50%);
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #fff58b,
+      #ffd21c
+      65%,
+      #edac00
+    );
+
+  border-radius:
+
+    55% 55%
+    45% 45%;
+
+  clip-path:
+
+    polygon(
+      50% 0%,
+      100% 32%,
+      90% 100%,
+      10% 100%,
+      0 32%
+    );
+
+}
+
+
+/* =====================================================
+   MENSAJE PRINCIPAL
+===================================================== */
+
+.message {
+
+  width: min(
+    650px,
+    95vw
+  );
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 10;
+
+  margin-top: -5px;
+
+  padding: 20px;
+
+  background:
+    rgba(255,255,255,.20);
+
+  border:
+    1px solid
+    rgba(255,255,255,.35);
+
+  border-radius: 30px;
+
+  backdrop-filter:
+    blur(10px);
+
+  box-shadow:
+    0 15px 50px
+    rgba(91,62,0,.12);
+
+}
+
+.message h2 {
+
+  font-size:
+    clamp(
+      1.4rem,
+      5vw,
+      2rem
+    );
+
+  color: #634800;
+
+  opacity: 0;
+
+  animation:
+    fadeUp
+    1.2s
+    ease
+    forwards;
+
+  animation-delay: .5s;
+
+}
+
+.message p {
+
+  margin:
+    12px auto 0;
+
+  max-width: 520px;
+
+  font-size:
+    clamp(
+      .95rem,
+      3vw,
+      1.1rem
+    );
+
+  line-height: 1.7;
+
+  color: #654a00;
+
+  opacity: 0;
+
+  animation:
+    fadeUp
+    1.2s
+    ease
+    forwards;
+
+  animation-delay: .9s;
+
+}
+
+@keyframes fadeUp {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(20px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.buttons {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 22px;
+
+}
+
+.btn {
+
+  border: none;
+
+  padding:
+    13px 24px;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  font-size: .95rem;
+
+  font-weight: 700;
+
+  transition:
+    transform .2s,
+    box-shadow .2s;
+
+  box-shadow:
+    0 7px 20px
+    rgba(75,53,0,.15);
+
+}
+
+.btn:hover {
+
+  transform:
+    translateY(-3px)
+    scale(1.04);
+
+}
+
+.btn:active {
+
+  transform:
+    scale(.96);
+
+}
+
+.btn.secondary {
+
+  background: white;
+
+  color: #b27b00;
+
+}
+
+.btn.primary {
+
+  background:
+
+    linear-gradient(
+      135deg,
+      #d89b00,
+      #af7400
+    );
+
+  color: white;
+
+}
+
+
+/* =====================================================
+   DEDICATORIA
+===================================================== */
+
+.from {
+
+  margin-top: 18px;
+
+  position: relative;
+
+  z-index: 10;
+
+  color: #755500;
+
+  text-align: center;
+
+  font-size: .9rem;
+
+}
+
+.from strong {
+
+  color: #5b4100;
+
+}
+
+
+/* =====================================================
+   CARTA
+===================================================== */
+
+.card {
+
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    rgba(40,28,0,.62);
+
+  backdrop-filter:
+    blur(7px);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition: .35s;
+
+  z-index: 100;
+
+}
+
+.card.show {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+
+}
+
+.card-inner {
+
+  position: relative;
+
+  width: min(
+    460px,
+    100%
+  );
+
+  padding:
+    40px 28px
+    32px;
+
+  text-align: center;
+
+  border-radius: 28px;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #fffdf4,
+      #fff8d7
+    );
+
+  box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.35);
+
+  transform:
+    translateY(30px)
+    scale(.85);
+
+  transition:
+    .45s
+    cubic-bezier(
+      .34,
+      1.56,
+      .64,
+      1
+    );
+
+}
+
+.card.show
+.card-inner {
+
+  transform:
+    translateY(0)
+    scale(1);
+
+}
+
+.card-inner .flower-icon {
+
+  font-size: 3rem;
+
+  margin-bottom: 10px;
+
+}
+
+.card-inner h2 {
+
+  color: #a87300;
+
+  font-size:
+    clamp(
+      1.5rem,
+      6vw,
+      2rem
+    );
+
+  margin-bottom: 18px;
+
+}
+
+.card-inner p {
+
+  color: #5d4600;
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+
+}
+
+.signature {
+
+  margin-top: 22px;
+
+  font-family: Georgia, serif;
+
+  font-style: italic;
+
+  color: #996c00;
+
+  font-size: 1.05rem;
+
+}
+
+.close {
+
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,202,35,.2);
+
+  color: #b57d00;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+}
+
+
+/* =====================================================
+   ELEMENTOS CAYENDO
+===================================================== */
+
+.falling {
+
+  position: fixed;
+
+  top: -60px;
+
+  pointer-events: none;
+
+  z-index: 20;
+
+  animation:
+    fall
+    linear
+    forwards;
+
+}
+
+@keyframes fall {
+
+  0% {
+
+    transform:
+      translateY(-30px)
+      rotate(0deg);
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    transform:
+      translateY(110vh)
+      rotate(720deg);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+/* =====================================================
+   MÓVILES
+===================================================== */
+
+@media
+(max-width: 500px) {
+
+  body {
+
+    padding:
+      25px 12px;
+
+  }
+
+  .bouquet {
+
+    transform:
+      scale(.9);
+
+    margin:
+      -10px 0;
+
+  }
+
+  .message {
+
+    padding:
+      20px 15px;
+
+  }
+
+  .buttons {
+
+    flex-direction: column;
+
+  }
+
+  .btn {
+
+    width: 100%;
+
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- LUCES DE FONDO -->
+
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+
+<!-- ==================================================
+     ENCABEZADO
+================================================== -->
+
+<header class="header">
+
+  <div class="small">
+
+    21 de septiembre 💛
+
+  </div>
+
+  <h1>
+
+    Para
+    <span>
+      Ximena
+    </span>
+    🌷
+
+  </h1>
+
+  <div class="nickname">
+
+    Ximena Abdala Ponce Sánchez
+    <br>
+
+    <strong>
+      alias Rabanito 🐰💛
+    </strong>
+
+  </div>
+
+</header>
+
+
+<!-- ==================================================
+     RAMO
+================================================== -->
+
+<div
+  class="bouquet"
+  id="bouquet"
+></div>
+
+
+<!-- ==================================================
+     MENSAJE
+================================================== -->
+
+<section class="message">
+
+  <h2>
+
+    🌷 Flores amarillas para
+    mi Rabanito 🌷
+
+  </h2>
+
+  <p>
+
+    Porque unas flores no siempre
+    tienen que durar unos días.
+
+    <br><br>
+
+    Estas las hice con código
+    para que puedas volver a verlas
+    todas las veces que quieras. 💛
+
+  </p>
+
+
+  <div class="buttons">
+
+    <button
+      class="btn secondary"
+      onclick="shower(50)"
+    >
+
+      Lluvia de tulipanes 🌷
+
+    </button>
+
+
+    <button
+      class="btn primary"
+      onclick="openCard()"
+    >
+
+      Tengo algo para ti 💌
+
+    </button>
+
+  </div>
+
+</section>
+
+
+<div class="from">
+
+  Hecho especialmente para ti por
+
+  <br>
+
+  <strong>
+    Guillermo Antonio Camarillo Viera
+  </strong>
+
+  💛
+
+</div>
+
+
+<!-- ==================================================
+     CARTA
+================================================== -->
+
+<div
+  class="card"
+  id="card"
+  onclick="closeCard(event)"
+>
+
+  <div
+    class="card-inner"
+    onclick="event.stopPropagation()"
+  >
+
+
+    <button
+      class="close"
+      onclick="closeCard()"
+    >
+
+      ✕
+
+    </button>
+
+
+    <div class="flower-icon">
+
+      🌷
+
+    </div>
+
+
+    <h2>
+
+      Para ti, Rabanito 💛
+
+    </h2>
+
+
+    <p>
+
+      Quería regalarte flores amarillas,
+      pero pensé que también podía
+      hacerlas un poquito diferentes.
+
+      <br><br>
+
+      Así que te hice estos tulipanes
+      con código, especialmente para ti.
+
+      <br><br>
+
+      Tal vez sean virtuales,
+      pero cada detalle de esta página
+      fue pensado para sacarte
+      aunque sea una pequeña sonrisa.
+
+      <br><br>
+
+      Y lo mejor es que estas flores
+      no se marchitan.
+
+      Siempre que quieras,
+      puedes regresar aquí
+      y encontrarlas esperándote.
+
+      <br><br>
+
+      Feliz 21 de septiembre,
+      Rabanito. 🌷💛
+
+    </p>
+
+
+    <div class="signature">
+
+      Con cariño,
+
+      <br>
+
+      Guillermo Antonio
+      Camarillo Viera ✨
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   CREAR TULIPANES
+===================================================== */
+
+const bouquet =
+  document.getElementById("bouquet");
+
+
+function createTulip() {
+
+  const tulip =
+    document.createElement("div");
+
+  tulip.className =
+    "tulip";
+
+
+  tulip.innerHTML = `
+
+    <div class="flower-head">
+
+      <div class="tulip-base"></div>
+
+      <div class="petal-left"></div>
+
+      <div class="petal-right"></div>
+
+      <div class="petal-center"></div>
+
+    </div>
+
+
+    <div class="stem"></div>
+
+
+    <div class="leaf left"></div>
+
+    <div class="leaf right"></div>
+
+  `;
+
+
+  return tulip;
+
+}
+
+
+/* Cinco tulipanes */
+
+for (
+  let i = 0;
+  i < 5;
+  i++
+) {
+
+  bouquet.appendChild(
+    createTulip()
+  );
+
+}
+
+
+/* =====================================================
+   LLUVIA DE FLORES
+===================================================== */
+
+const fallingElements = [
+
+  "🌷",
+  "💛",
+  "✨",
+  "🌼",
+  "💫"
+
+];
+
+
+function shower(
+  amount = 45
+) {
+
+
+  for (
+    let i = 0;
+    i < amount;
+    i++
+  ) {
+
+
+    setTimeout(
+      () => {
+
+
+        const item =
+          document.createElement(
+            "div"
+          );
+
+
+        item.className =
+          "falling";
+
+
+        item.textContent =
+
+          fallingElements[
+
+            Math.floor(
+
+              Math.random() *
+
+              fallingElements.length
+
+            )
+
+          ];
+
+
+        item.style.left =
+
+          Math.random() *
+          100 +
+          "vw";
+
+
+        item.style.fontSize =
+
+          (
+            17 +
+            Math.random() *
+            22
+          ) +
+
+          "px";
+
+
+        item.style.animationDuration =
+
+          (
+            3 +
+            Math.random() *
+            3.5
+          ) +
+
+          "s";
+
+
+        document.body
+          .appendChild(item);
+
+
+        setTimeout(
+          () =>
+            item.remove(),
+          7000
+        );
+
+
+      },
+
+      i * 70
+
+    );
+
+  }
+
+}
+
+
+/* =====================================================
+   CARTA
+===================================================== */
+
+function openCard() {
+
+  document
+    .getElementById("card")
+    .classList
+    .add("show");
+
+}
+
+
+function closeCard(event) {
+
+  const card =
+    document.getElementById(
+      "card"
+    );
+
+
+  if (
+    !event ||
+    event.target.id === "card"
+  ) {
+
+    card
+      .classList
+      .remove("show");
+
+  }
+
+}
+
+
+/* =====================================================
+   TECLA ESC
+===================================================== */
+
+document.addEventListener(
+
+  "keydown",
+
+  event => {
+
+    if (
+      event.key ===
+      "Escape"
+    ) {
+
+      closeCard();
+
+    }
+
+  }
+
+);
+
+
+/* =====================================================
+   ANIMACIÓN AL ABRIR
+===================================================== */
+
+window.addEventListener(
+
+  "load",
+
+  () => {
+
+    setTimeout(
+      () =>
+        shower(18),
+      600
+    );
+
+  }
+
+);
+
+</script>
+
+
+</body>
+</html>
