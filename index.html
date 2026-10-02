@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 
 <meta
@@ -8,7 +10,13 @@
   content="width=device-width, initial-scale=1.0"
 >
 
+<meta
+  name="theme-color"
+  content="#ffd447"
+>
+
 <title>Para Rabanito 🌷💛</title>
+
 
 <style>
 
@@ -57,7 +65,8 @@ body {
 
   justify-content: center;
 
-  padding: 35px 15px;
+  padding:
+    35px 15px;
 
   position: relative;
 
@@ -67,7 +76,7 @@ body {
 
 
 /* =====================================================
-   DESTELLOS DEL FONDO
+   LUCES DEL FONDO
 ===================================================== */
 
 .glow {
@@ -82,7 +91,8 @@ body {
   background:
     rgba(255,255,255,.22);
 
-  filter: blur(70px);
+  filter:
+    blur(70px);
 
   pointer-events: none;
 
@@ -120,7 +130,10 @@ body {
   margin-bottom: 10px;
 
   animation:
-    fadeDown 1.2s ease forwards;
+    fadeDown
+    1.2s
+    ease
+    forwards;
 
 }
 
@@ -143,6 +156,7 @@ body {
   margin-top: 8px;
 
   font-size:
+
     clamp(
       2rem,
       7vw,
@@ -154,7 +168,8 @@ body {
   color: #6a4d00;
 
   text-shadow:
-    0 3px 12px rgba(255,255,255,.45);
+    0 3px 12px
+    rgba(255,255,255,.45);
 
 }
 
@@ -169,6 +184,7 @@ body {
   margin-top: 8px;
 
   font-size:
+
     clamp(
       1rem,
       4vw,
@@ -210,10 +226,12 @@ body {
 
   position: relative;
 
-  width: min(
-    420px,
-    95vw
-  );
+  width:
+
+    min(
+      420px,
+      95vw
+    );
 
   height: 310px;
 
@@ -256,8 +274,6 @@ body {
 }
 
 
-/* Posiciones individuales */
-
 .tulip:nth-child(1) {
 
   left: 7%;
@@ -265,12 +281,15 @@ body {
   height: 235px;
 
   transform:
+
     rotate(-15deg)
+
     scale(.85);
 
   animation-delay: 0s;
 
 }
+
 
 .tulip:nth-child(2) {
 
@@ -279,12 +298,15 @@ body {
   height: 265px;
 
   transform:
+
     rotate(-8deg)
+
     scale(.95);
 
   animation-delay: .4s;
 
 }
+
 
 .tulip:nth-child(3) {
 
@@ -293,7 +315,9 @@ body {
   height: 300px;
 
   transform:
+
     rotate(-2deg)
+
     scale(1.08);
 
   z-index: 3;
@@ -302,6 +326,7 @@ body {
 
 }
 
+
 .tulip:nth-child(4) {
 
   right: 22%;
@@ -309,12 +334,15 @@ body {
   height: 270px;
 
   transform:
+
     rotate(8deg)
+
     scale(.97);
 
   animation-delay: 1.2s;
 
 }
+
 
 .tulip:nth-child(5) {
 
@@ -323,15 +351,15 @@ body {
   height: 235px;
 
   transform:
+
     rotate(15deg)
+
     scale(.86);
 
   animation-delay: 1.6s;
 
 }
 
-
-/* Movimiento */
 
 @keyframes sway {
 
@@ -382,7 +410,9 @@ body {
     );
 
   box-shadow:
-    0 2px 5px rgba(0,0,0,.15);
+
+    0 2px 5px
+    rgba(0,0,0,.15);
 
 }
 
@@ -404,17 +434,20 @@ body {
     );
 
   width: 50px;
+
   height: 100px;
 
   bottom: 42px;
 
   border-radius:
+
     100% 0
     100% 0;
 
   z-index: 0;
 
 }
+
 
 .leaf.left {
 
@@ -427,6 +460,7 @@ body {
     rotate(-23deg);
 
 }
+
 
 .leaf.right {
 
@@ -446,7 +480,7 @@ body {
 
 
 /* =====================================================
-   FLOR DEL TULIPÁN
+   CABEZA DEL TULIPÁN
 ===================================================== */
 
 .flower-head {
@@ -458,12 +492,14 @@ body {
   top: 10px;
 
   width: 72px;
+
   height: 78px;
 
   transform:
     translateX(-50%);
 
   filter:
+
     drop-shadow(
       0 8px 6px
       rgba(119,76,0,.18)
@@ -472,24 +508,23 @@ body {
 }
 
 
-/*
-   Base principal del tulipán
-*/
-
 .tulip-base {
 
   position: absolute;
 
   left: 50%;
+
   bottom: 0;
 
   transform:
     translateX(-50%);
 
   width: 66px;
+
   height: 65px;
 
   border-radius:
+
     15% 15%
     48% 48%;
 
@@ -498,26 +533,23 @@ body {
     linear-gradient(
       145deg,
       #ffe84f,
-      #ffc400
-      60%,
+      #ffc400 60%,
       #e8a800
     );
 
 }
 
 
-/*
-   Pétalo izquierdo
-*/
-
 .petal-left {
 
   position: absolute;
 
   width: 39px;
+
   height: 66px;
 
   left: 4px;
+
   bottom: 15px;
 
   background:
@@ -542,18 +574,16 @@ body {
 }
 
 
-/*
-   Pétalo derecho
-*/
-
 .petal-right {
 
   position: absolute;
 
   width: 39px;
+
   height: 66px;
 
   right: 4px;
+
   bottom: 15px;
 
   background:
@@ -578,18 +608,16 @@ body {
 }
 
 
-/*
-   Pétalo central
-*/
-
 .petal-center {
 
   position: absolute;
 
   width: 40px;
+
   height: 75px;
 
   left: 50%;
+
   bottom: 15px;
 
   transform:
@@ -600,8 +628,7 @@ body {
     linear-gradient(
       180deg,
       #fff58b,
-      #ffd21c
-      65%,
+      #ffd21c 65%,
       #edac00
     );
 
@@ -629,10 +656,12 @@ body {
 
 .message {
 
-  width: min(
-    650px,
-    95vw
-  );
+  width:
+
+    min(
+      650px,
+      95vw
+    );
 
   text-align: center;
 
@@ -645,11 +674,23 @@ body {
   padding: 20px;
 
   background:
-    rgba(255,255,255,.20);
+
+    rgba(
+      255,
+      255,
+      255,
+      .20
+    );
 
   border:
+
     1px solid
-    rgba(255,255,255,.35);
+    rgba(
+      255,
+      255,
+      255,
+      .35
+    );
 
   border-radius: 30px;
 
@@ -657,14 +698,17 @@ body {
     blur(10px);
 
   box-shadow:
+
     0 15px 50px
     rgba(91,62,0,.12);
 
 }
 
+
 .message h2 {
 
   font-size:
+
     clamp(
       1.4rem,
       5vw,
@@ -676,6 +720,7 @@ body {
   opacity: 0;
 
   animation:
+
     fadeUp
     1.2s
     ease
@@ -685,14 +730,17 @@ body {
 
 }
 
+
 .message p {
 
   margin:
+
     12px auto 0;
 
   max-width: 520px;
 
   font-size:
+
     clamp(
       .95rem,
       3vw,
@@ -706,6 +754,7 @@ body {
   opacity: 0;
 
   animation:
+
     fadeUp
     1.2s
     ease
@@ -714,6 +763,7 @@ body {
   animation-delay: .9s;
 
 }
+
 
 @keyframes fadeUp {
 
@@ -756,12 +806,15 @@ body {
 
 }
 
+
 .btn {
 
   border: none;
 
   padding:
-    13px 24px;
+
+    13px
+    24px;
 
   border-radius: 50px;
 
@@ -772,22 +825,28 @@ body {
   font-weight: 700;
 
   transition:
+
     transform .2s,
     box-shadow .2s;
 
   box-shadow:
+
     0 7px 20px
     rgba(75,53,0,.15);
 
 }
 
+
 .btn:hover {
 
   transform:
+
     translateY(-3px)
+
     scale(1.04);
 
 }
+
 
 .btn:active {
 
@@ -796,6 +855,7 @@ body {
 
 }
 
+
 .btn.secondary {
 
   background: white;
@@ -803,6 +863,7 @@ body {
   color: #b27b00;
 
 }
+
 
 .btn.primary {
 
@@ -815,6 +876,80 @@ body {
     );
 
   color: white;
+
+}
+
+
+/* =====================================================
+   BOTÓN ANIVERSARIO
+===================================================== */
+
+.anniversary-btn {
+
+  width: 100%;
+
+  max-width: 360px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+
+    linear-gradient(
+      135deg,
+      #8b0015,
+      #c41635,
+      #7d0013
+    );
+
+  color: #fff;
+
+  box-shadow:
+
+    0 8px 25px
+    rgba(130,0,25,.25);
+
+}
+
+
+.anniversary-btn::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,.4),
+      transparent
+    );
+
+  transform:
+    translateX(-120%);
+
+  animation:
+    shine
+    3s
+    infinite;
+
+}
+
+
+@keyframes shine {
+
+  60%,
+  100% {
+
+    transform:
+      translateX(120%);
+
+  }
 
 }
 
@@ -839,6 +974,7 @@ body {
 
 }
 
+
 .from strong {
 
   color: #5b4100;
@@ -847,7 +983,7 @@ body {
 
 
 /* =====================================================
-   CARTA
+   CARTA DE TULIPANES
 ===================================================== */
 
 .card {
@@ -857,7 +993,13 @@ body {
   inset: 0;
 
   background:
-    rgba(40,28,0,.62);
+
+    rgba(
+      40,
+      28,
+      0,
+      .62
+    );
 
   backdrop-filter:
     blur(7px);
@@ -882,6 +1024,7 @@ body {
 
 }
 
+
 .card.show {
 
   opacity: 1;
@@ -892,17 +1035,22 @@ body {
 
 }
 
+
 .card-inner {
 
   position: relative;
 
-  width: min(
-    460px,
-    100%
-  );
+  width:
+
+    min(
+      460px,
+      100%
+    );
 
   padding:
-    40px 28px
+
+    40px
+    28px
     32px;
 
   text-align: center;
@@ -918,14 +1066,18 @@ body {
     );
 
   box-shadow:
+
     0 25px 70px
     rgba(0,0,0,.35);
 
   transform:
+
     translateY(30px)
+
     scale(.85);
 
   transition:
+
     .45s
     cubic-bezier(
       .34,
@@ -936,14 +1088,17 @@ body {
 
 }
 
-.card.show
-.card-inner {
+
+.card.show .card-inner {
 
   transform:
+
     translateY(0)
+
     scale(1);
 
 }
+
 
 .card-inner .flower-icon {
 
@@ -953,11 +1108,13 @@ body {
 
 }
 
+
 .card-inner h2 {
 
   color: #a87300;
 
   font-size:
+
     clamp(
       1.5rem,
       6vw,
@@ -967,6 +1124,7 @@ body {
   margin-bottom: 18px;
 
 }
+
 
 .card-inner p {
 
@@ -978,11 +1136,14 @@ body {
 
 }
 
+
 .signature {
 
   margin-top: 22px;
 
-  font-family: Georgia, serif;
+  font-family:
+    Georgia,
+    serif;
 
   font-style: italic;
 
@@ -992,14 +1153,17 @@ body {
 
 }
 
+
 .close {
 
   position: absolute;
 
   top: 15px;
+
   right: 18px;
 
   width: 38px;
+
   height: 38px;
 
   border: none;
@@ -1007,7 +1171,13 @@ body {
   border-radius: 50%;
 
   background:
-    rgba(255,202,35,.2);
+
+    rgba(
+      255,
+      202,
+      35,
+      .2
+    );
 
   color: #b57d00;
 
@@ -1019,7 +1189,7 @@ body {
 
 
 /* =====================================================
-   ELEMENTOS CAYENDO
+   LLUVIA PRINCIPAL
 ===================================================== */
 
 .falling {
@@ -1033,18 +1203,22 @@ body {
   z-index: 20;
 
   animation:
+
     fall
     linear
     forwards;
 
 }
 
+
 @keyframes fall {
 
   0% {
 
     transform:
+
       translateY(-30px)
+
       rotate(0deg);
 
     opacity: 1;
@@ -1054,7 +1228,986 @@ body {
   100% {
 
     transform:
+
       translateY(110vh)
+
+      rotate(720deg);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+/* =====================================================
+   PANTALLA DE ANIVERSARIO
+===================================================== */
+
+.anniversary {
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 500;
+
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  background:
+
+    radial-gradient(
+      circle at top,
+      #520916,
+      #260008 42%,
+      #090003 100%
+    );
+
+  transition:
+
+    opacity .7s ease,
+    visibility .7s ease;
+
+}
+
+
+.anniversary.show {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+
+}
+
+
+.anniversary::before {
+
+  content: "";
+
+  position: fixed;
+
+  width: 500px;
+
+  height: 500px;
+
+  top: -220px;
+
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  background:
+
+    radial-gradient(
+      circle,
+      rgba(255,207,84,.25),
+      transparent 70%
+    );
+
+  pointer-events: none;
+
+}
+
+
+/* =====================================================
+   BOTÓN VOLVER SUPERIOR
+===================================================== */
+
+.anniversary-close {
+
+  position: fixed;
+
+  top:
+
+    max(
+      18px,
+      env(safe-area-inset-top)
+    );
+
+  left: 18px;
+
+  z-index: 510;
+
+  border: 1px solid
+    rgba(255,255,255,.15);
+
+  padding:
+
+    11px
+    18px;
+
+  border-radius: 50px;
+
+  background:
+
+    rgba(
+      255,
+      255,
+      255,
+      .1
+    );
+
+  backdrop-filter:
+    blur(12px);
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+}
+
+
+/* =====================================================
+   CONTENIDO ANIVERSARIO
+===================================================== */
+
+.anniversary-content {
+
+  position: relative;
+
+  width:
+
+    min(
+      720px,
+      100%
+    );
+
+  margin: auto;
+
+  padding:
+
+    95px
+    20px
+    70px;
+
+  color: #fff;
+
+  text-align: center;
+
+}
+
+
+.anniversary-icon {
+
+  font-size: 4rem;
+
+  animation:
+
+    anniversaryFloat
+    3s
+    ease-in-out
+    infinite;
+
+}
+
+
+@keyframes anniversaryFloat {
+
+  0%,
+  100% {
+
+    transform:
+
+      translateY(0)
+
+      rotate(-3deg);
+
+  }
+
+  50% {
+
+    transform:
+
+      translateY(-10px)
+
+      rotate(3deg);
+
+  }
+
+}
+
+
+.anniversary-small {
+
+  margin-top: 20px;
+
+  color: #e4be6c;
+
+  font-size: .75rem;
+
+  letter-spacing: 4px;
+
+  font-weight: 600;
+
+}
+
+
+.anniversary-content > h1 {
+
+  margin-top: 12px;
+
+  font-family:
+
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:
+
+    clamp(
+      2.6rem,
+      10vw,
+      5rem
+    );
+
+  font-weight: 400;
+
+  line-height: 1.05;
+
+}
+
+
+.anniversary-content > h1 span {
+
+  display: inline-block;
+
+  animation:
+
+    heartBeat
+    1.7s
+    infinite;
+
+}
+
+
+@keyframes heartBeat {
+
+  0%,
+  100% {
+
+    transform:
+      scale(1);
+
+  }
+
+  20% {
+
+    transform:
+      scale(1.14);
+
+  }
+
+  35% {
+
+    transform:
+      scale(1);
+
+  }
+
+  50% {
+
+    transform:
+      scale(1.1);
+
+  }
+
+}
+
+
+/* =====================================================
+   NOMBRES
+===================================================== */
+
+.anniversary-names {
+
+  margin-top: 25px;
+
+  line-height: 1.8;
+
+  color: #f3dfbe;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+
+    clamp(
+      1rem,
+      4vw,
+      1.25rem
+    );
+
+}
+
+
+.anniversary-names strong {
+
+  color: #ffd86b;
+
+}
+
+
+.anniversary-names span {
+
+  color: #d6a648;
+
+  font-size: 1.3rem;
+
+}
+
+
+/* =====================================================
+   DOS AÑOS
+===================================================== */
+
+.anniversary-counter {
+
+  margin:
+
+    55px auto
+    20px;
+
+  width: 230px;
+
+  height: 230px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border:
+
+    1px solid
+    rgba(
+      255,
+      215,
+      110,
+      .4
+    );
+
+  background:
+
+    radial-gradient(
+      circle,
+      rgba(255,213,102,.15),
+      rgba(255,255,255,.02)
+    );
+
+  box-shadow:
+
+    0 0 80px
+    rgba(211,44,74,.18);
+
+}
+
+
+.counter-number {
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 6rem;
+
+  color: #ffd369;
+
+  line-height: .9;
+
+}
+
+
+.counter-text {
+
+  margin-top: 15px;
+
+  width: 160px;
+
+  font-size: .8rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  line-height: 1.5;
+
+  color: #e4c88d;
+
+}
+
+
+.together-counter {
+
+  margin:
+
+    25px auto
+    70px;
+
+  color: #e8d5b2;
+
+  line-height: 1.7;
+
+}
+
+
+.together-counter span {
+
+  display: block;
+
+  color: #ffd363;
+
+  font-size: 2rem;
+
+  font-weight: bold;
+
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.love-section {
+
+  margin-top: 80px;
+
+  text-align: left;
+
+}
+
+
+.section-mini {
+
+  text-align: center;
+
+  letter-spacing: 4px;
+
+  font-size: .72rem;
+
+  color: #cf9d49;
+
+  font-weight: bold;
+
+}
+
+
+.love-section > h2,
+.love-letter h2 {
+
+  margin-top: 10px;
+
+  text-align: center;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+
+    clamp(
+      2rem,
+      7vw,
+      3rem
+    );
+
+  font-weight: 400;
+
+}
+
+
+/* =====================================================
+   LÍNEA DEL TIEMPO
+===================================================== */
+
+.timeline {
+
+  position: relative;
+
+  margin-top: 55px;
+
+  padding-left: 34px;
+
+}
+
+
+.timeline::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 13px;
+
+  top: 0;
+
+  bottom: 0;
+
+  width: 2px;
+
+  background:
+
+    linear-gradient(
+      #dba844,
+      #8b2135,
+      transparent
+    );
+
+}
+
+
+.timeline-item {
+
+  position: relative;
+
+  margin-bottom: 35px;
+
+}
+
+
+.timeline-dot {
+
+  position: absolute;
+
+  left: -34px;
+
+  top: 18px;
+
+  width: 28px;
+
+  height: 28px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: .8rem;
+
+  background: #2a040b;
+
+  border:
+
+    1px solid
+    #dcad55;
+
+  box-shadow:
+
+    0 0 20px
+    rgba(222,173,85,.2);
+
+}
+
+
+.timeline-card {
+
+  padding:
+
+    23px
+    22px;
+
+  border-radius: 22px;
+
+  background:
+
+    rgba(
+      255,
+      255,
+      255,
+      .055
+    );
+
+  border:
+
+    1px solid
+    rgba(
+      255,
+      220,
+      150,
+      .12
+    );
+
+  backdrop-filter:
+    blur(8px);
+
+}
+
+
+.timeline-card span {
+
+  font-size: .7rem;
+
+  letter-spacing: 2px;
+
+  color: #d1a252;
+
+}
+
+
+.timeline-card h3 {
+
+  margin-top: 8px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  color: #fff4dc;
+
+  font-size: 1.25rem;
+
+}
+
+
+.timeline-card p {
+
+  margin-top: 12px;
+
+  line-height: 1.7;
+
+  color: #d5c1b2;
+
+  font-size: .95rem;
+
+}
+
+
+.timeline-card.special {
+
+  border:
+
+    1px solid
+    rgba(
+      255,
+      210,
+      100,
+      .35
+    );
+
+  box-shadow:
+
+    0 15px 40px
+    rgba(
+      160,
+      15,
+      40,
+      .18
+    );
+
+}
+
+
+/* =====================================================
+   FRASE ESPECIAL
+===================================================== */
+
+.special-quote {
+
+  margin-top: 100px;
+
+  padding:
+
+    40px
+    20px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+
+    clamp(
+      1.5rem,
+      6vw,
+      2.3rem
+    );
+
+  line-height: 1.5;
+
+  color: #f5d89c;
+
+}
+
+
+.special-quote span {
+
+  display: block;
+
+  margin-top: 18px;
+
+  font-family:
+    "Segoe UI",
+    sans-serif;
+
+  font-size: .8rem;
+
+  letter-spacing: 3px;
+
+  color: #b98d4b;
+
+}
+
+
+/* =====================================================
+   CARTA DEL ANIVERSARIO
+===================================================== */
+
+.love-letter {
+
+  position: relative;
+
+  margin-top: 80px;
+
+  padding:
+
+    50px
+    30px;
+
+  border-radius: 28px;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      #fffaf0,
+      #f7ead0
+    );
+
+  color: #4d1e25;
+
+  box-shadow:
+
+    0 30px 80px
+    rgba(0,0,0,.35);
+
+}
+
+
+.love-letter .section-mini {
+
+  color: #a47335;
+
+}
+
+
+.love-letter h2 {
+
+  color: #531523;
+
+}
+
+
+.love-letter > p:not(.section-mini) {
+
+  margin-top: 30px;
+
+  line-height: 1.9;
+
+  font-family:
+    Georgia,
+    serif;
+
+  color: #51373a;
+
+  font-size:
+
+    clamp(
+      1rem,
+      3.5vw,
+      1.1rem
+    );
+
+}
+
+
+.letter-decoration {
+
+  position: absolute;
+
+  top: 18px;
+
+  right: 22px;
+
+  font-size: 1.8rem;
+
+}
+
+
+.anniversary-signature {
+
+  margin-top: 35px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-style: italic;
+
+  color: #91273c;
+
+  font-size: 1.15rem;
+
+}
+
+
+/* =====================================================
+   FINAL DEL ANIVERSARIO
+===================================================== */
+
+.final-anniversary {
+
+  margin-top: 100px;
+
+  padding:
+
+    50px
+    20px;
+
+}
+
+
+.big-heart {
+
+  font-size: 5rem;
+
+  animation:
+
+    heartBeat
+    1.6s
+    infinite;
+
+}
+
+
+.final-anniversary h2 {
+
+  margin-top: 15px;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+
+    clamp(
+      3rem,
+      12vw,
+      5rem
+    );
+
+  color: #ffd56e;
+
+}
+
+
+.final-anniversary p {
+
+  color: #d9c5a5;
+
+  margin:
+
+    5px 0
+    30px;
+
+}
+
+
+.anniversary-final-btn {
+
+  background:
+
+    linear-gradient(
+      135deg,
+      #c99635,
+      #f0cb70
+    );
+
+  color: #3f0913;
+
+}
+
+
+.back-flowers {
+
+  margin-top: 25px;
+
+  background: none;
+
+  border: none;
+
+  color: #cfaf72;
+
+  font-size: .9rem;
+
+  cursor: pointer;
+
+}
+
+
+/* =====================================================
+   LLUVIA DEL ANIVERSARIO
+===================================================== */
+
+.anniversary-falling {
+
+  position: fixed;
+
+  top: -50px;
+
+  pointer-events: none;
+
+  z-index: 550;
+
+  animation:
+
+    anniversaryFall
+    linear
+    forwards;
+
+}
+
+
+@keyframes anniversaryFall {
+
+  from {
+
+    transform:
+
+      translateY(-50px)
+
+      rotate(0deg);
+
+    opacity: 1;
+
+  }
+
+  to {
+
+    transform:
+
+      translateY(110vh)
+
       rotate(720deg);
 
     opacity: 0;
@@ -1074,9 +2227,12 @@ body {
   body {
 
     padding:
-      25px 12px;
+
+      25px
+      12px;
 
   }
+
 
   .bouquet {
 
@@ -1084,16 +2240,22 @@ body {
       scale(.9);
 
     margin:
-      -10px 0;
+
+      -10px
+      0;
 
   }
+
 
   .message {
 
     padding:
-      20px 15px;
+
+      20px
+      15px;
 
   }
+
 
   .buttons {
 
@@ -1101,52 +2263,91 @@ body {
 
   }
 
+
   .btn {
 
     width: 100%;
 
   }
 
+
+  .anniversary-content {
+
+    padding:
+
+      90px
+      16px
+      60px;
+
+  }
+
+
+  .love-letter {
+
+    padding:
+
+      45px
+      22px;
+
+  }
+
+
+  .anniversary-counter {
+
+    width: 210px;
+
+    height: 210px;
+
+  }
+
 }
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<!-- LUCES DE FONDO -->
+<!-- ==================================================
+     LUCES
+================================================== -->
 
 <div class="glow one"></div>
 <div class="glow two"></div>
 
 
 <!-- ==================================================
-     ENCABEZADO
+     ENCABEZADO PRINCIPAL
 ================================================== -->
 
 <header class="header">
 
   <div class="small">
 
-    21 de septiembre 💛
+    Un detalle para ti 💛
 
   </div>
+
 
   <h1>
 
     Para
+
     <span>
       Ximena
     </span>
+
     🌷
 
   </h1>
 
+
   <div class="nickname">
 
     Ximena Abdala Ponce Sánchez
+
     <br>
 
     <strong>
@@ -1169,7 +2370,7 @@ body {
 
 
 <!-- ==================================================
-     MENSAJE
+     MENSAJE PRINCIPAL
 ================================================== -->
 
 <section class="message">
@@ -1180,6 +2381,7 @@ body {
     mi Rabanito 🌷
 
   </h2>
+
 
   <p>
 
@@ -1196,6 +2398,7 @@ body {
 
 
   <div class="buttons">
+
 
     <button
       class="btn secondary"
@@ -1215,6 +2418,17 @@ body {
       Tengo algo para ti 💌
 
     </button>
+
+
+    <button
+      class="btn anniversary-btn"
+      onclick="openAnniversary()"
+    >
+
+      Nuestro 2.º aniversario ❤️
+
+    </button>
+
 
   </div>
 
@@ -1237,7 +2451,7 @@ body {
 
 
 <!-- ==================================================
-     CARTA
+     CARTA DE LAS FLORES
 ================================================== -->
 
 <div
@@ -1299,14 +2513,11 @@ body {
       Y lo mejor es que estas flores
       no se marchitan.
 
+      <br><br>
+
       Siempre que quieras,
       puedes regresar aquí
       y encontrarlas esperándote.
-
-      <br><br>
-
-      Feliz 21 de septiembre,
-      Rabanito. 🌷💛
 
     </p>
 
@@ -1328,6 +2539,548 @@ body {
 </div>
 
 
+<!-- ==================================================
+     EXPERIENCIA DEL SEGUNDO ANIVERSARIO
+================================================== -->
+
+<div
+  class="anniversary"
+  id="anniversary"
+>
+
+
+  <button
+    class="anniversary-close"
+    onclick="closeAnniversary()"
+  >
+
+    ← Volver
+
+  </button>
+
+
+  <main class="anniversary-content">
+
+
+    <div class="anniversary-icon">
+
+      🌷
+
+    </div>
+
+
+    <p class="anniversary-small">
+
+      01 · OCTUBRE · 2026
+
+    </p>
+
+
+    <h1>
+
+      Dos años contigo
+
+      <span>
+        ❤️
+      </span>
+
+    </h1>
+
+
+    <p class="anniversary-names">
+
+      Ximena Abdala Ponce Sánchez
+
+      <br>
+
+      <strong>
+        “Rabanito”
+      </strong>
+
+      <br>
+
+      <span>
+        &
+      </span>
+
+      <br>
+
+      Guillermo Antonio Camarillo Viera
+
+    </p>
+
+
+    <!-- ==================================================
+         CONTADOR
+    ================================================== -->
+
+    <div class="anniversary-counter">
+
+      <div class="counter-number">
+
+        2
+
+      </div>
+
+
+      <div class="counter-text">
+
+        años escribiendo
+        nuestra historia
+
+      </div>
+
+    </div>
+
+
+    <div class="together-counter">
+
+      <span id="daysTogether">
+
+        730
+
+      </span>
+
+      días desde que comenzó
+      nuestra historia 💛
+
+    </div>
+
+
+    <!-- ==================================================
+         NUESTRA HISTORIA
+    ================================================== -->
+
+    <section class="love-section">
+
+
+      <p class="section-mini">
+
+        NUESTRA HISTORIA
+
+      </p>
+
+
+      <h2>
+
+        Un poquito de nosotros
+
+      </h2>
+
+
+      <div class="timeline">
+
+
+        <div class="timeline-item">
+
+
+          <div class="timeline-dot">
+
+            ❤️
+
+          </div>
+
+
+          <div class="timeline-card">
+
+
+            <span>
+
+              01 · OCT · 2024
+
+            </span>
+
+
+            <h3>
+
+              Aquí comenzó todo
+
+            </h3>
+
+
+            <p>
+
+              Un día se convirtió
+              en el comienzo de una historia
+              que ninguno de los dos sabía
+              hasta dónde llegaría.
+
+              Y aquí estamos,
+              dos años después.
+
+            </p>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+
+          <div class="timeline-dot">
+
+            🌷
+
+          </div>
+
+
+          <div class="timeline-card">
+
+
+            <span>
+
+              NUESTRO PRIMER AÑO
+
+            </span>
+
+
+            <h3>
+
+              Aprendiendo a caminar juntos
+
+            </h3>
+
+
+            <p>
+
+              Entre risas,
+              momentos bonitos,
+              diferencias,
+              experiencias
+              y muchas historias,
+              fuimos aprendiendo
+              un poquito más
+              el uno del otro.
+
+            </p>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+
+          <div class="timeline-dot">
+
+            ✨
+
+          </div>
+
+
+          <div class="timeline-card">
+
+
+            <span>
+
+              NUESTRO SEGUNDO AÑO
+
+            </span>
+
+
+            <h3>
+
+              Seguimos construyendo
+
+            </h3>
+
+
+            <p>
+
+              Ya no somos exactamente
+              las mismas personas
+              que comenzaron esta historia.
+
+              Hemos cambiado,
+              aprendido
+              y crecido.
+
+              Pero seguimos aquí.
+
+            </p>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+
+          <div class="timeline-dot">
+
+            💛
+
+          </div>
+
+
+          <div class="timeline-card special">
+
+
+            <span>
+
+              01 · OCT · 2026
+
+            </span>
+
+
+            <h3>
+
+              Hoy cumplimos dos años
+
+            </h3>
+
+
+            <p>
+
+              Dos años de recuerdos.
+
+              Dos años de momentos.
+
+              Dos años de una historia
+              que solamente nosotros
+              sabemos todo lo que significa.
+
+              <br><br>
+
+              Y todavía quedan
+              páginas por escribir.
+
+            </p>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+    <!-- ==================================================
+         FRASE
+    ================================================== -->
+
+    <div class="special-quote">
+
+      “No quiero una historia perfecta.
+
+      <br>
+
+      Quiero una historia
+      que cuando miremos hacia atrás,
+      sepamos que valió la pena vivirla.”
+
+      <span>
+
+        GUILLERMO & RABANITO · 2024 — 2026
+
+      </span>
+
+    </div>
+
+
+    <!-- ==================================================
+         CARTA ANIVERSARIO
+    ================================================== -->
+
+    <section class="love-letter">
+
+
+      <div class="letter-decoration">
+
+        ✨
+
+      </div>
+
+
+      <p class="section-mini">
+
+        PARA MI RABANITO
+
+      </p>
+
+
+      <h2>
+
+        Si pudiera volver
+        al comienzo...
+
+      </h2>
+
+
+      <p>
+
+        Volvería a vivir cada momento
+        que nos trajo hasta aquí.
+
+        <br><br>
+
+        No porque todo haya sido perfecto,
+        sino porque absolutamente todo
+        forma parte de nuestra historia.
+
+        <br><br>
+
+        Hemos cambiado,
+        hemos aprendido,
+        hemos reído,
+        hemos tenido días increíbles
+        y otros no tanto.
+
+        <br><br>
+
+        Pero cuando miro hacia atrás,
+        me gusta pensar que aquella versión
+        de nosotros que comenzó esto
+        estaría feliz de saber
+        que llegamos hasta aquí.
+
+        <br><br>
+
+        Hace dos años comenzamos algo
+        sin saber todas las cosas
+        que viviríamos juntos.
+
+        Y hoy existen recuerdos,
+        palabras,
+        lugares,
+        bromas
+        y momentos
+        que solamente tú y yo entendemos.
+
+        <br><br>
+
+        Hoy no quería regalarte
+        solamente flores.
+
+        Quería regalarte un pequeño lugar
+        que pudiera quedarse aquí,
+        guardando aunque sea
+        una parte de nuestra historia.
+
+        <br><br>
+
+        Porque los regalos pueden perderse,
+        las flores pueden marchitarse
+        y los días pasan.
+
+        Pero algunos recuerdos
+        merecen quedarse.
+
+        <br><br>
+
+        Feliz segundo aniversario,
+        Rabanito.
+
+        <br><br>
+
+        Gracias por estos
+
+        <strong>
+          dos años.
+        </strong>
+
+        ❤️
+
+      </p>
+
+
+      <div class="anniversary-signature">
+
+        Con cariño,
+
+        <br><br>
+
+        Guillermo ❤️
+
+      </div>
+
+
+    </section>
+
+
+    <!-- ==================================================
+         FINAL
+    ================================================== -->
+
+    <section class="final-anniversary">
+
+
+      <div class="big-heart">
+
+        ❤️
+
+      </div>
+
+
+      <h2>
+
+        2 años
+
+      </h2>
+
+
+      <p>
+
+        01 de octubre de 2024
+
+        <br>
+
+        —
+
+        <br>
+
+        01 de octubre de 2026
+
+        <br><br>
+
+        Y nuestra historia
+        todavía no termina.
+
+      </p>
+
+
+      <button
+        class="btn anniversary-final-btn"
+        onclick="anniversaryShower(80)"
+      >
+
+        Celebremos nosotros dos ✨
+
+      </button>
+
+
+      <br>
+
+
+      <button
+        class="back-flowers"
+        onclick="closeAnniversary()"
+      >
+
+        ← Regresar a tus tulipanes 🌷
+
+      </button>
+
+
+    </section>
+
+
+  </main>
+
+
+</div>
+
+
 <script>
 
 /* =====================================================
@@ -1335,13 +3088,18 @@ body {
 ===================================================== */
 
 const bouquet =
-  document.getElementById("bouquet");
+  document.getElementById(
+    "bouquet"
+  );
 
 
 function createTulip() {
 
   const tulip =
-    document.createElement("div");
+    document.createElement(
+      "div"
+    );
+
 
   tulip.className =
     "tulip";
@@ -1361,9 +3119,7 @@ function createTulip() {
 
     </div>
 
-
     <div class="stem"></div>
-
 
     <div class="leaf left"></div>
 
@@ -1377,7 +3133,7 @@ function createTulip() {
 }
 
 
-/* Cinco tulipanes */
+/* Crear cinco tulipanes */
 
 for (
   let i = 0;
@@ -1393,7 +3149,7 @@ for (
 
 
 /* =====================================================
-   LLUVIA DE FLORES
+   LLUVIA DE FLORES PRINCIPAL
 ===================================================== */
 
 const fallingElements = [
@@ -1478,12 +3234,17 @@ function shower(
 
 
         document.body
-          .appendChild(item);
+          .appendChild(
+            item
+          );
 
 
         setTimeout(
-          () =>
-            item.remove(),
+          () => {
+
+            item.remove();
+
+          },
           7000
         );
 
@@ -1500,15 +3261,19 @@ function shower(
 
 
 /* =====================================================
-   CARTA
+   CARTA PRINCIPAL
 ===================================================== */
 
 function openCard() {
 
   document
-    .getElementById("card")
+    .getElementById(
+      "card"
+    )
     .classList
-    .add("show");
+    .add(
+      "show"
+    );
 
 }
 
@@ -1528,7 +3293,9 @@ function closeCard(event) {
 
     card
       .classList
-      .remove("show");
+      .remove(
+        "show"
+      );
 
   }
 
@@ -1536,7 +3303,252 @@ function closeCard(event) {
 
 
 /* =====================================================
-   TECLA ESC
+   ANIVERSARIO
+===================================================== */
+
+function openAnniversary() {
+
+  const anniversary =
+    document.getElementById(
+      "anniversary"
+    );
+
+
+  anniversary
+    .classList
+    .add(
+      "show"
+    );
+
+
+  document.body.style.overflow =
+    "hidden";
+
+
+  anniversary.scrollTop = 0;
+
+
+  setTimeout(
+    () => {
+
+      anniversaryShower(
+        30
+      );
+
+    },
+    500
+  );
+
+}
+
+
+function closeAnniversary() {
+
+  const anniversary =
+    document.getElementById(
+      "anniversary"
+    );
+
+
+  anniversary
+    .classList
+    .remove(
+      "show"
+    );
+
+
+  document.body.style.overflow =
+    "";
+
+}
+
+
+/* =====================================================
+   CONTADOR DE DÍAS JUNTOS
+===================================================== */
+
+function updateDaysTogether() {
+
+  const startDate =
+    new Date(
+      "2024-10-01T00:00:00"
+    );
+
+
+  const today =
+    new Date();
+
+
+  startDate.setHours(
+    0,
+    0,
+    0,
+    0
+  );
+
+
+  today.setHours(
+    0,
+    0,
+    0,
+    0
+  );
+
+
+  const difference =
+    today - startDate;
+
+
+  const days =
+    Math.floor(
+
+      difference /
+
+      (
+        1000 *
+        60 *
+        60 *
+        24
+      )
+
+    );
+
+
+  const counter =
+    document.getElementById(
+      "daysTogether"
+    );
+
+
+  if (
+    counter
+  ) {
+
+    counter.textContent =
+      days;
+
+  }
+
+}
+
+
+updateDaysTogether();
+
+
+/* =====================================================
+   LLUVIA DEL ANIVERSARIO
+===================================================== */
+
+const anniversaryElements = [
+
+  "❤️",
+  "🌷",
+  "✨",
+  "💛",
+  "🤍"
+
+];
+
+
+function anniversaryShower(
+  amount = 50
+) {
+
+
+  for (
+    let i = 0;
+    i < amount;
+    i++
+  ) {
+
+
+    setTimeout(
+      () => {
+
+
+        const item =
+          document.createElement(
+            "div"
+          );
+
+
+        item.className =
+          "anniversary-falling";
+
+
+        item.textContent =
+
+          anniversaryElements[
+
+            Math.floor(
+
+              Math.random() *
+
+              anniversaryElements.length
+
+            )
+
+          ];
+
+
+        item.style.left =
+
+          Math.random() *
+          100 +
+          "vw";
+
+
+        item.style.fontSize =
+
+          (
+            15 +
+            Math.random() *
+            23
+          ) +
+
+          "px";
+
+
+        item.style.animationDuration =
+
+          (
+            3 +
+            Math.random() *
+            4
+          ) +
+
+          "s";
+
+
+        document.body
+          .appendChild(
+            item
+          );
+
+
+        setTimeout(
+          () => {
+
+            item.remove();
+
+          },
+          7500
+        );
+
+
+      },
+
+      i * 70
+
+    );
+
+  }
+
+}
+
+
+/* =====================================================
+   TECLA ESCAPE
 ===================================================== */
 
 document.addEventListener(
@@ -1545,12 +3557,15 @@ document.addEventListener(
 
   event => {
 
+
     if (
       event.key ===
       "Escape"
     ) {
 
       closeCard();
+
+      closeAnniversary();
 
     }
 
@@ -1560,7 +3575,7 @@ document.addEventListener(
 
 
 /* =====================================================
-   ANIMACIÓN AL ABRIR
+   ANIMACIÓN AL ENTRAR
 ===================================================== */
 
 window.addEventListener(
@@ -1569,9 +3584,15 @@ window.addEventListener(
 
   () => {
 
+
     setTimeout(
-      () =>
-        shower(18),
+      () => {
+
+        shower(
+          18
+        );
+
+      },
       600
     );
 
@@ -1583,4 +3604,5 @@ window.addEventListener(
 
 
 </body>
+
 </html>
